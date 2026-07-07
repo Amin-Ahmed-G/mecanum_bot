@@ -19,7 +19,6 @@ A fully simulated autonomous 4-wheel mecanum drive robot environment.
 * Custom `odom_tf_relay` for smooth coordinate transformations
 
 ## 🚀 How to Run
-![Mecanum Bot Simulation](image.png)
 
 **1. Clone the repository:**
 ```bash
