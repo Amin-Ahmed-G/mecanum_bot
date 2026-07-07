@@ -1,5 +1,4 @@
 import os
-
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, RegisterEventHandler, TimerAction
@@ -9,10 +8,8 @@ from launch.substitutions import Command, PathJoinSubstitution
 from launch_ros.actions import Node
 from launch_ros.parameter_descriptions import ParameterValue
 
-
 def generate_launch_description():
     pkg_share = get_package_share_directory('mecanum_bot')
-
     xacro_file = os.path.join(pkg_share, 'urdf', 'mecanum_bot.urdf.xacro')
     world_file = os.path.join(pkg_share, 'worlds', 'mecanum_world.sdf')
     rviz_config = os.path.join(pkg_share, 'rviz', 'mecanum.rviz')
